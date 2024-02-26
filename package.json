@@ -1,6 +1,6 @@
 {
   "name": "@tmlc/openai-polling",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Polling library for OpenAI Threads API",
   "main": "./lib/index.js",
   "files": [
