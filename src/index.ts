@@ -4,7 +4,7 @@ export async function poll(
   openai: OpenAI,
   thread: OpenAI.Beta.Threads.Thread,
   run: OpenAI.Beta.Threads.Runs.Run,
-  options: Partial<PollOptions>
+  options: Partial<PollOptions> = defaultPollOptions
 ): Promise<OpenAI.Beta.Threads.Runs.Run> {
   const mergedOptions: PollOptions = { ...defaultPollOptions, ...options };
   const maxAttempts = mergedOptions.maxAttempts;
