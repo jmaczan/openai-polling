@@ -43,7 +43,7 @@ await poll(openai, thread, run);
 
 ## API
 
-### poll(openai: OpenAI, thread: OpenAI.Beta.Threads.Thread, runId: OpenAI.Beta.Threads.Runs.Run): Promise<OpenAI.Beta.Threads.Runs.Run>
+### poll(openai: OpenAI, thread: OpenAI.Beta.Threads.Thread, runId: OpenAI.Beta.Threads.Runs.Run, options?: Partial<PollOptions>): Promise<OpenAI.Beta.Threads.Runs.Run>
 
 #### openai
 
@@ -53,13 +53,39 @@ Type: `OpenAI`
 
 Type: `OpenAI.Beta.Threads.Thread`
 
-##### runId
+#### runId
 
 Type: `OpenAI.Beta.Threads.Runs.Run`
+
+##### (optional) options: PollOptions
+
+Type: `PollOptions`
+
+Default:
+
+```
+{
+  maxAttempts: 60,
+  intervalInMilliseconds: 4000,
+  showLogs: false,
+};
+```
+
+You might pass only some of the parameters and they will be merged with defaults
 
 #### returns
 
 Type: `Promise<OpenAI.Beta.Threads.Runs.Run>`
+
+### PollOptions
+
+```
+export interface PollOptions {
+  maxAttempts: number;
+  intervalInMilliseconds: number;
+  showLogs: boolean;
+}
+```
 
 ## License
 
