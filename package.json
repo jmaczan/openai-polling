@@ -1,7 +1,7 @@
 {
-  "name": "typescript-npm-package-template",
-  "version": "0.0.0-development",
-  "description": "A template for creating npm packages using TypeScript and VSCode",
+  "name": "@tmlc/openai-polling",
+  "version": "0.0.1",
+  "description": "Polling library for OpenAI Threads API",
   "main": "./lib/index.js",
   "files": [
     "lib/**/*"
@@ -19,32 +19,31 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryansonshine/typescript-npm-package-template.git"
+    "url": "git+https://github.com/TinyMLCompany/openai-polling.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Ryan Sonshine",
-    "email": "ryansonshine@users.noreply.github.com",
-    "url": "https://github.com/ryansonshine"
+    "name": "Jędrzej Maczan",
+    "email": "jed@maczan.pl",
+    "url": "https://github.com/TinyMLCompany/openai-polling"
   },
   "engines": {
     "node": ">=12.0"
   },
   "keywords": [
-    "boilerplate",
-    "template",
+    "openai",
+    "threads",
+    "openai-sdk",
+    "openai-api",
+    "openai-api",
     "typescript",
-    "vscode",
-    "jest",
-    "husky",
-    "commitizen",
-    "semantic-release",
-    "codecov"
+    "tmlc",
+    "tiny machine learning company"
   ],
   "bugs": {
-    "url": "https://github.com/ryansonshine/typescript-npm-package-template/issues"
+    "url": "https://github.com/TinyMLCompany/openai-polling/issues"
   },
-  "homepage": "https://github.com/ryansonshine/typescript-npm-package-template#readme",
+  "homepage": "https://github.com/TinyMLCompany/openai-polling#readme",
   "devDependencies": {
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
@@ -118,5 +117,8 @@
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
+  },
+  "dependencies": {
+    "openai": "^4.28.0"
   }
 }
