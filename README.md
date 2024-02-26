@@ -4,7 +4,7 @@
 
 A library that [fills the gaps in OpenAI Threads API](https://platform.openai.com/docs/assistants/how-it-works/polling-for-updates)
 
-[![npm package][npm-img]][npm-url]
+<!-- [![npm package][npm-img]][npm-url] -->
 
 <!-- [![Build Status][build-img]][build-url]
 [![Downloads][downloads-img]][downloads-url]
